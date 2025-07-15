@@ -140,4 +140,11 @@ article.blog-post img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .affiliate-note {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin: 1rem 0;
+    max-width: 700px;
+  }
 }
