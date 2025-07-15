@@ -37,6 +37,8 @@ a:hover {
 
 main {
   padding: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .blurb {
@@ -120,4 +122,22 @@ footer {
   height: auto;
   display: block;
   margin: 1rem 0;
+}
+
+article.blog-post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .blog-post img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blog-post {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
