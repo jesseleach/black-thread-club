@@ -95,21 +95,6 @@ main {
   flex: 1;
 }
 
-/* Limit height of outfit photos and ensure consistent crop */
-.look-section img {
-  width: 100%;
-  height: auto;
-  max-height: 600px; /* optional: caps really tall images */
-  object-fit: contain;
-  display: block;
-}
-
-.shorts-section img {
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
-}
-
 footer {
   text-align: center;
   padding: 2rem;
@@ -129,6 +114,26 @@ article.blog-post img {
   height: auto;
   display: block;
 }
+
+/* ↓↓↓ Specific fix for the shorts blog post ↓↓↓ */
+.blog-post-shorts img {
+  width: 240px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.blog-post-shorts .image-row,
+.blog-post-shorts .shorts-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Responsive sizing for smaller screens */
 @media (max-width: 600px) {
   .blog-post img {
     width: 100%;
@@ -136,15 +141,7 @@ article.blog-post img {
     height: auto;
   }
 
-  .blog-post {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .affiliate-note {
-    font-size: 0.85rem;
-    color: #666;
-    font-style: italic;
-    margin: 1rem 0;
-    max-width: 700px;
+  .blog-post-shorts img {
+    max-width: 100%;
   }
 }
