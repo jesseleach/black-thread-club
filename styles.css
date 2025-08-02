@@ -41,13 +41,6 @@ main {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 2rem; /* or 32px, adjust to your preference */
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
 .blurb {
   font-style: italic;
   color: #555;
