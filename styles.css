@@ -91,6 +91,22 @@ main {
   margin-bottom: 2rem;
 }
 
+.image-block {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.ai-caption {
+  font-size: 0.75rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
 .image-row div {
   flex: 1;
 }
