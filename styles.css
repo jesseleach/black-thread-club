@@ -51,15 +51,11 @@ main {
 }
 
 .intro,
-.blog-post {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-
+.blog-post,
 .blog-preview {
   max-width: 800px;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .blog-card {
@@ -73,24 +69,23 @@ main {
 
 .blog-card img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   object-fit: cover;
   border: 1px solid #ccc;
-  margin-bottom: 0.75rem;
   display: block;
 }
 
 .blog-card h2,
 .blog-card h3 {
-  margin: 0.5rem 0 0.25rem;
+  margin: 0.75rem 0 0.25rem;
 }
 
 .blog-card p {
   margin-top: 0;
+  color: #555;
 }
 
-/* New project card layout */
+/* PROJECT CARD LAYOUT */
 
 .project-card {
   max-width: 620px;
@@ -104,7 +99,7 @@ main {
 
 .project-main-photo {
   width: 100%;
-  max-width: none !important;
+  max-width: none;
   height: auto;
   display: block;
   object-fit: cover;
@@ -118,7 +113,7 @@ main {
 
 .project-process-row img {
   width: 100%;
-  max-width: none !important;
+  max-width: none;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
@@ -131,10 +126,17 @@ main {
 
 .project-card p {
   margin-top: 0;
-  color: #555;
 }
 
-/* Existing image/post styles */
+/* GENERAL POST IMAGE STYLES */
+
+.blog-post img,
+article.blog-post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
 
 .image-grid .image-row {
   display: flex;
@@ -162,27 +164,7 @@ main {
   flex: 1;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.blog-post img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-}
-
-article.blog-post img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Specific fix for the shorts blog post */
+/* SHORTS BLOG POST */
 
 .blog-post-shorts img {
   width: 240px;
@@ -201,7 +183,26 @@ article.blog-post img {
   gap: 1.5rem;
 }
 
-/* Mobile styles */
+/* ABOUT IMAGE */
+
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* MOBILE */
 
 @media (max-width: 600px) {
   main {
@@ -216,28 +217,7 @@ article.blog-post img {
     margin-left: 1rem;
   }
 
-  .blog-post img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .blog-post-shorts img {
-    max-width: 100%;
-  }
-
-  .about-image {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  .project-card {
-    max-width: 100%;
-  }
-
+  .project-card,
   .project-photo-layout {
     max-width: 100%;
   }
@@ -245,5 +225,12 @@ article.blog-post img {
   .project-process-row {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+
+  .blog-post img,
+  .blog-post-shorts img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
