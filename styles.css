@@ -233,4 +233,53 @@ footer {
     max-width: 100%;
     height: auto;
   }
+  /* FINAL PROJECT CARD OVERRIDE */
+
+  .blog-card.project-card {
+    max-width: 620px;
+  }
+
+  .blog-card.project-card a {
+    display: block;
+  }
+
+  .blog-card.project-card .project-photo-layout {
+    display: grid;
+    gap: 12px;
+    max-width: 620px;
+  }
+
+  .blog-card.project-card .project-main-photo {
+    width: 100%;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  .blog-card.project-card .project-process-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .blog-card.project-card .project-process-row img {
+    width: 100%;
+    max-width: 100% !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .blog-card.project-card h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .blog-card.project-card p {
+    margin-top: 0;
+    color: #555;
+  }
 }
