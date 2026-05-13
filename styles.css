@@ -190,4 +190,27 @@ article.blog-post img {
     height: 100%;
     object-fit: cover;
   }
+  .project-photo-layout {
+    display: grid;
+    gap: 12px;
+  }
+
+  .project-main-photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .project-process-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .project-process-row img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+  }
 }
